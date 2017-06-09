@@ -1,0 +1,32 @@
+body {
+    background: #ffda00;
+    transition: background-color .5s ease-out;
+}
+
+.coming-soon-field{
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.logo-field{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+.tagline-field{
+    position: absolute;
+    bottom: 125px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}

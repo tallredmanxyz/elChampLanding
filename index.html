@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>El Champ</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+<div class="welcome-banner">
+    <div class="coming-soon-field">
+        <img id="coming-soon" class="img-responsive" src="img/coming-soon.png" alt="Coming Soon">
+    </div>
+    <div class="logo-field">
+        <a href="http://instagram.com/">
+            <img id="logo-el-champ" class="img-responsive" src="img/logo-white.png" alt="El Champ logo">
+        </a>
+    </div>
+    <div class="tagline-field">
+        <img id="tagline" class="img-responsive" src="img/tagline.png" alt="Bent on Rolemoddelin'">
+    </div>
+</body>
+
+<script>
+    var colorArray = ["#ffda00", "#f21d41", "#2c61f7", "#169646", ];
+    function changeColor(curNumber){
+        curNumber++;
+
+        if(curNumber > 3){
+            curNumber = 0;
+        }
+        $("body").css("background-color",colorArray[curNumber]);
+        setTimeout(function(){changeColor(curNumber)}, 2000);
+    }
+
+    changeColor(0);
+
+
+
+</script>
+</html>
+
