@@ -1,11 +1,10 @@
 body {
     background: #ffda00;
-    transition: background-color .5s ease-out;
 }
 
 .coming-soon-field{
     position: absolute;
-    top: 125px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%)
 }
@@ -20,7 +19,7 @@ body {
 
 .tagline-field{
     position: absolute;
-    bottom: 125px;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%)
 }
